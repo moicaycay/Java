@@ -31,6 +31,7 @@ Trong ví dụ sau, Programmer là lớp con và Employee là lớp cha. Mối q
 
 ----
 #2.ĐA HÌNH
+
 Tính đa hình trong Java là một khái niệm mà từ đó chúng ta có thể thực hiện một hành động đơn theo nhiều cách khác nhau. Tính đa hình được suy ra từ hai từ Hy Lạp là Poly và Morphs. Poly nghĩa là nhiều và morphs nghĩa là hình, dạng. Có hai kiểu đa hình trong Java: Đa hình tại compile time và đa hình runtime. Chúng ta có thể thực hiện tính đa hình trong Java bởi nạp chồng phương thức và ghi đè phương thức.
 Nếu bạn nạp chồng phương thức static trong Java, thì đó là ví dụ về đa hình tại compile time. Ở chương này chúng sẽ tập trung vào đa hình tại runtime trong Java.
 Điều quan trọng để biết là có cách nào truy cập một đối tượng qua các biến tham chiếu. Một biến tham chiếu có thể chỉ là một kiểu. Khi được khai báo, kiểu của biến tham chiếu này không thể thay đổi.
