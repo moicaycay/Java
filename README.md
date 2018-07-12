@@ -30,7 +30,7 @@ Trong ví dụ sau, Programmer là lớp con và Employee là lớp cha. Mối q
 > Ở trên, đối tượng Programmer có thể truy cập trường của riêng lớp nó cũng như của lớp Employee, đó là ví dụ cho tính tái sử dụng.
 
 
-#2.ĐA HÌNH
+## 2.ĐA HÌNH
 Tính đa hình trong Java là một khái niệm mà từ đó chúng ta có thể thực hiện một hành động đơn theo nhiều cách khác nhau. Tính đa hình được suy ra từ hai từ Hy Lạp là Poly và Morphs. Poly nghĩa là nhiều và morphs nghĩa là hình, dạng. Có hai kiểu đa hình trong Java: Đa hình tại compile time và đa hình runtime. Chúng ta có thể thực hiện tính đa hình trong Java bởi nạp chồng phương thức và ghi đè phương thức.
 Nếu bạn nạp chồng phương thức static trong Java, thì đó là ví dụ về đa hình tại compile time. Ở chương này chúng sẽ tập trung vào đa hình tại runtime trong Java.
 Điều quan trọng để biết là có cách nào truy cập một đối tượng qua các biến tham chiếu. Một biến tham chiếu có thể chỉ là một kiểu. Khi được khai báo, kiểu của biến tham chiếu này không thể thay đổi.
@@ -158,7 +158,7 @@ Và:
 
 Vì, BabyDog không ghi đè phương thức eat(), do đó phương thức eat() của lớp Dog() được triệu hồi.
 
-#3.QUAN HÊ KÊT HỌP HAS_A
+## 3.QUAN HÊ KÊT HỌP HAS_A
 
 Nếu một lớp có một tham chiếu thực thể, thì nó được biết đến như là một lớp có quan hệ HAS-A. Giả sử một tình huống, đối tượng Employee chứa nhiều thông tin như id, name, eamailID, … Nó gồm một hoặc nhiều đối tượng address mà có thông tin riêng như city, state, country, zipcode, … như sau:
 
