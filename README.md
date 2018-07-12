@@ -2,7 +2,7 @@
 
 ----
 ## 1.Thừa kế
-> Cú pháp thừa kế
+### Cú pháp thừa kế
 
     class ten_lop_con extends ten_lop_cha
     {
@@ -37,13 +37,13 @@ Nếu bạn nạp chồng phương thức static trong Java, thì đó là ví d
 Biến tham chiếu có thể được gán cho những đối tượng khác được cung cấp mà không được khai báo final. Kiểu của biến tham chiếu sẽ xác định phương thức mà có thể được triệu hồi trên đối tượng.
 Một biến tham chiếu có thể được hướng đến bất kì đối tượng với kiểu khai báo hoặc bất kì kiểu con nào của kiểu khai báo. Một biến tham chiếu có thể được khai báo như là một class hoặc một interface.
 
-1. Đa hình tại runtime trong Java
+### 1. Đa hình tại runtime trong Java
 
 Đa hình tại runtime là một tiến trình mà trong đó một lời gọi tới một phương thức được ghi đè được xử lý tại runtime thay vì tại compile time. Trong tiến trình này, một phương thức được ghi đè được gọi thông qua biến tham chiếu của một lớp cha. Việc quyết định phương thức được gọi là dựa trên đối tượng nào đang được tham chiếu bởi biến tham chiếu.
 Trước khi tìm hiểu về đa hình tại runtime, chúng ta cùng tìm hiểu về Upcasting.
 
 
-2.Upcasting là gì?
+### 2.Upcasting là gì?
 
 Khi biến tham chiếu của lớp cha tham chiếu tới đối tượng của lớp con, thì đó là Upcasting. Ví dụ:
 
@@ -68,7 +68,7 @@ Khi việc gọi phương thức được quyết định bởi JVM chứ không
       }  
     }  
 
-Ví dụ thực về đa hình tại runtime trong Java
+#### Ví dụ thực về đa hình tại runtime trong Java
 Giả sử Bank là một lớp cung cấp phương thức để lấy lãi suất. Nhưng lãi suất lại khác nhau giữa từng ngân hàng. Ví dụ, các ngân hàng VCB, AGR và CTG có thể cung cấp các lãi suất lần lượt là 8%, 7% và 9%. (Ví dụ này cũng có trong chương ghi đè phương thức nhưng không có Upcasting)
 
     class Bank{  
@@ -97,11 +97,11 @@ Giả sử Bank là một lớp cung cấp phương thức để lấy lãi su�
     }  
     } 
     )
-3.Đa hình tại runtime trong Java với thành viên dữ liệu
+### 3.Đa hình tại runtime trong Java với thành viên dữ liệu
 
 Phương thức bị ghi đè không là thành viên dữ liệu, vì thế đa hình tại runtime không thể có được bởi thành viên dữ liệu. Trong ví dụ sau đây, cả hai lớp có một thành viên dữ liệu là speedlimit, chúng ta truy cập thành viên dữ liệu bởi biến tham chiếu của lớp cha mà tham chiếu tới đối tượng lớp con. Khi chúng ta truy cập thành viên dữ liệu mà không bị ghi đè, thì nó sẽ luôn luôn truy cập thành viên dữ liệu của lớp cha.
 
-Qui tắc: Đa hình tại runtime không thể có được bởi thành viên dữ liệu.
+#### Qui tắc: Đa hình tại runtime không thể có được bởi thành viên dữ liệu.
 
     class Bike{  
      int speedlimit=90;  
@@ -114,7 +114,7 @@ Qui tắc: Đa hình tại runtime không thể có được bởi thành viên 
       System.out.println(obj.speedlimit);//90  
     }
  
-4.Đa hình tại runtime trong Java với kế thừa nhiều tầng (Multilevel)
+### 4.Đa hình tại runtime trong Java với kế thừa nhiều tầng (Multilevel)
 
 Bạn theo dõi ví dụ sau:
 
@@ -176,7 +176,7 @@ Sử dụng quan hệ HAS-A giúp làm tăng tính tái sử dụng của code. 
 
 Tính kế thừa nên chỉ được sử dụng nếu mối quan hệ IS-A được duy trì thông qua suốt vòng đời của đối tượng có liên quan; nếu không thì, quan hệ HAS-A là lựa chọn tốt nhất.
 
-Ví dụ đơn giản về quan hệ HAS-A trong Java
+#### Ví dụ đơn giản về quan hệ HAS-A trong Java
 Trong ví dụ, chúng ta tạo tham chiếu của lớp Operation trong lớp Circle.
 
     class Operation{  
@@ -204,7 +204,7 @@ Trong ví dụ, chúng ta tạo tham chiếu của lớp Operation trong lớp C
      }  
     }
 
-Ví dụ
+#### Ví dụ
 Như trong ví dụ trên đã đề cập, Employee có một đối tượng là Address, đối tượng này chứa thông tin riêng như city, state, country, … Trong tình huống này, mối quan hệ là Employee HAS-A address.
 
 Tệp Address.java có nội dung:
